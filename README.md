@@ -1,5 +1,6 @@
 # go-events
-
+[![Build Status](https://travis-ci.org/Dongss/go-events.svg?branch=master)](https://travis-ci.org/Dongss/go-events.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Dongss/go-events/badge.svg?branch=master)](https://coveralls.io/github/Dongss/go-events?branch=master)
 [![godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/Dongss/go-events)
 
 Events emitter by Go channel
