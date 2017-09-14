@@ -1,7 +1,7 @@
 package events
 
-// Event is good
+// Event struct
 type Event struct {
-	Name 		string
-	Args 		[]interface{}
+	Name string
+	Args []interface{}
 }

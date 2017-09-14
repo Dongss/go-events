@@ -5,7 +5,7 @@ import (
 	"sync"
 )
 
-// Emitter is good
+// Emitter struct
 type Emitter struct {
 	inited    bool
 	mutex     sync.Mutex
@@ -13,7 +13,7 @@ type Emitter struct {
 	// async     bool
 }
 
-// Listener is good
+// Listener struct
 type Listener struct {
 	ch     chan Event
 	isOnce bool

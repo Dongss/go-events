@@ -1,6 +1,10 @@
-# GG
+# go-events
 
-Events emitter by Go channel,
+[![godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/Dongss/go-events)
+
+Events emitter by Go channel
+
+[Documents](https://godoc.org/github.com/Dongss/go-events)
 
 ## Getting started
 
@@ -46,17 +50,17 @@ for event := range e.On("testc") {
 
 ```
 e := &Emitter{}
-	go func() {
-		<-e.Emit("testw1", "test me 1", map[string]int{"dsds": 33})
-		<-e.Emit("testw2", "test me 2")
-		<-e.Emit("testw3", "test me 3")
-		e.CloseAll("testw*")
-	}()
+go func() {
+    <-e.Emit("testw1", "test me 1", map[string]int{"dsds": 33})
+    <-e.Emit("testw2", "test me 2")
+    <-e.Emit("testw3", "test me 3")
+    e.CloseAll("testw*")
+}()
 
-	i := 0
-	for event := range e.On("testw*") {
-		println(event.Name)
-	}
+i := 0
+for event := range e.On("testw*") {
+    println(event.Name)
+}
 ```
 
 ### List listeners
